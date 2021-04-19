@@ -1,38 +1,101 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+}
+.job_cards {
+  width: 32%;
+}
+.job_card_container {
+  width: 370px;
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-column {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+.imageContainer {
+  width: 40px;
+  height: 40px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  border-radius: 4px;
+  margin-top: -30px;
+}
+.dark-mode {
+  background-color: #131822;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.detailContainer {
+  max-width: 1100px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
+.light-mode {
+  background-color: white;
+  color: black;
+}
+.dark1 {
+  background-color: #19212d;
+  color: white;
+}
+.button {
+  background-color: #5865e0;
+  padding: 15px;
+  border-color: transparent;
+  color: white;
+  border-radius: 5px;
+}
+input:focus {
+  border-color: transparent !important;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  border-left-color: transparent !important;
+
+  border-right-color: transparent !important ;
+}
+.detail-Logo {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Detail-head {
+  align-items: center;
+  margin-top: -40px;
+}
+@media (max-width: 1100px) {
+  .job_card_container {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+}
+.show-on-mob {
+  display: none;
+}
+@media (max-width: 500px) {
+  .hide-on-mob {
+    display: none !important;
+  }
+  .show-on-mob {
+    display: unset;
+  }
+  .row-to-col-mob {
+    flex-direction: column !important;
+  }
+
+  .detail-Logo {
+    z-index: 10 !important;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    border-radius: 10px;
   }
 }

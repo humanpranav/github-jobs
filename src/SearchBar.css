@@ -1,0 +1,12 @@
+.search-button {
+  background-color: #5865e0;
+  border-radius: 4px;
+  font-size: 20px;
+  color: white;
+}
+.search-row {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
