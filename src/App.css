@@ -43,9 +43,15 @@
   background-color: white;
   color: black;
 }
+.light-mode:hover {
+  background-color: lightgray;
+}
 .dark1 {
   background-color: #19212d;
   color: white;
+}
+.dark1:hover {
+  background-color: #5865e0;
 }
 .button {
   background-color: #5865e0;

@@ -1,6 +1,8 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import { useSelector } from "react-redux";
+import "../Job.css";
+
 let color = () => {
   let col = ["#CE161F", "#0071B5", "#FC9A02", "#660066", "##FFC0CB", "#63B71C"];
   let index = Math.floor(Math.random() * col.length);
@@ -52,11 +54,13 @@ export default function Job({ job, onClick, ...props }) {
           </div>
 
           <p
+            className="jobTitle"
             style={{
               fontSize: "18px",
               fontWeight: 600,
               fontFamily: "sans-serif",
               margin: "5px",
+              cursor: "pointer",
             }}
           >
             {job.title}
